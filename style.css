@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+body > div{
+    display: flex;
+    flex-flow: column nowrap;
+
+    max-width: 700px;
+    width: 100%;
+    min-height: min-content;
+
+    background-color: rgb(158, 158, 158);
+}
+body > div input{
+    border-radius: 5px;
+    border: 1px solid black;
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin: 10px 5px;
+
+
+}
+body > div > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+
+    font-family: 'Roboto', sans-serif;
+
+  
+    width: 100%;
+
+}
+div.show_data{
+    margin: 50px 0 ; 
+}
+div  img{
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    
+    background-color: #ffffffff;
+
+}
+body > div .crypto-info{
+    padding: 10px;
+    margin-left: 10px;
+
+    border: 1px solid #ffffff;
+    width: inherit;
+}
+body > div .crypto-info h1{
+    margin: 5px 0;
+}
+body > div .crypto-info span{
+   line-height: 30px;
+}
+.show_fetch_data{
+    align-items: center;
+}
+.fetch_data{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.card_data{
+    display: flex;
+    flex-flow: row nowrap;
+    
+    max-width: 500px;
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+img#loading{
+    display: none;
+
+    max-width: 50px;
+    width: 100%;
+    
+    background-color: transparent;
+}
+#no-more-data{
+    display: none;
+    
+    font-size: 20px;
+    color: #ffffff;
+}
+.info-result{
+    position: relative;
+    top: -40px;
+}
